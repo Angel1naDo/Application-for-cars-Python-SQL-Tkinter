@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import messagebox
 from connection import get_connection
 
-# Συνάρτηση για εισαγωγή βιβλίου
+# Συνάρτηση για εισαγωγή αυτοκινήτου
 from connection import get_connection
 
 def insert_car(model, year, color):
@@ -39,7 +39,7 @@ def submit_car():
         return
 
     if insert_car(model, year, color):
-        messagebox.showinfo("Επιτυχία", "Το βιβλίο προστέθηκε επιτυχώς!")
+        messagebox.showinfo("Επιτυχία", "Το αυτοκίνητο προστέθηκε επιτυχώς!")
         entry_model.delete(0, tk.END)
         entry_year.delete(0, tk.END)
         entry_color.delete(0, tk.END)
